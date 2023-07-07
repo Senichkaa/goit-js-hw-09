@@ -16,3 +16,39 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.buttons-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.buttons {
+  padding: 16px 24px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.buttons:hover,
+.buttons:focus {
+  background-color: #a3a3a3;
+  color: #fafafa;
+  border-color: #afafaf;
+}
+
+.buttons:disabled {
+  border-color: #999;
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
