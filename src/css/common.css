@@ -17,6 +17,8 @@ img {
   max-width: 100%;
 }
 
+/* 1st task */
+
 .buttons-wrap {
   position: absolute;
   top: 50%;
@@ -51,4 +53,70 @@ img {
   background-color: #ccc;
   color: #999;
   cursor: not-allowed;
+}
+
+/* 2nd task */
+
+.timer-input-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.input-timer {
+  padding: 15px 24px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 10px;
+}
+
+.timer-button {
+  padding: 16px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.4s ease-in-out;
+}
+
+.timer-button:hover,
+.timer-button:focus {
+  background-color: #a3a3a3;
+  color: #fafafa;
+  border-color: #afafaf;
+}
+
+.timer-button:disabled {
+  border-color: #999;
+  background-color: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.timer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.value {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
